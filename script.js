@@ -5,13 +5,11 @@ async function fetchData() {
     try {
       const response = await fetch(url);
       const data = await response.json();
-      processDataAndDisplayChart(data);
+      return data;
     } catch (error) {
       console.error('Error fetching data:', error);
     }
   }
-  
-  fetchData();
   
 
   function processDataAndDisplayChart(data) {
@@ -47,3 +45,34 @@ async function fetchData() {
       }]
     });
   }
+
+  function filterData(data, county) {
+    return data.filter(record => record.county.toLowerCase() === county.toLowerCase());
+  }
+  
+  function mainEvent() {
+    const loadDataButton = document.querySelector("#data_load");
+    const filterButton = document.querySelector("#filter");
+    const countyInput = document.querySelector("#county-input");
+  
+    let storedData = [];
+    let currentData = [];
+  
+    loadDataButton.addEventListener("click", async () => {
+      storedData = await fetchData();
+      currentData = storedData;
+      processDataAndDisplayChart(currentData);
+    });
+  
+    filterButton.addEventListener("click", () => {
+      currentData = filterData(storedData, countyInput.value);
+      processDataAndDisplayChart(currentData);
+    });
+  
+    countyInput.addEventListener("input", () => {
+      currentData = filterData(storedData, countyInput.value);
+      processDataAndDisplayChart(currentData);
+    });
+  }
+  
+  document.addEventListener("DOMContentLoaded", mainEvent);

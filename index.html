@@ -4,22 +4,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seth's INST377 Final Project</title>
-   <!-- Adds Highcharts.js library -->
-   <script src="https://code.highcharts.com/highcharts.js"></script>
-   <!-- Adds script.js script -->
-   <script src="script.js"></script>
-   <!-- Adds styles.css -->
-   <link rel="stylesheet" href="styles.css" />
- </head>
- <body>
-   <header>
-     <h1>Maryland Electric Vehicle Adoption Data Visualization</h1>
-   </header>
-   <main>
-     <section>
-       <h2>EV Adoption Rates by County</h2>
-       <div id="map"></div>
-     </section>
-   </main>
- </body>
+    <!-- Adds Highcharts.js library -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <!-- Adds script.js script -->
+    <script src="script.js"></script>
+    <!-- Adds styles.css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Maryland Electric Vehicle Adoption Data Visualization</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Select Year</h2>
+        <form>
+          <label for="year-select">Year:</label>
+          <select id="year-select" name="year">
+            <option value="">--Please choose a year--</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+          </select>
+        </form>
+      </section>
+
+      <section>
+        <h2>EV Adoption Rates by County</h2>
+        <div id="map"></div>
+      </section>
+    </main>
+  </body>
 </html>

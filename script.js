@@ -1,4 +1,3 @@
-
 async function fetchData() {
     const appToken = 'hszg6UTvq6TA4EQToCB3lZJ1q';
     const url = `https://opendata.maryland.gov/resource/qtcv-n3tc.json?$$app_token=${appToken}`;
@@ -48,4 +47,3 @@ async function fetchData() {
       }]
     });
   }
-  

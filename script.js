@@ -53,7 +53,7 @@ async function fetchData() {
   function mainEvent() {
     const loadDataButton = document.querySelector("#data_load");
     const filterButton = document.querySelector("#filter");
-    const countyInput = document.querySelector("#county-input");
+    const countySelect = document.querySelector("#county-select");
   
     let storedData = [];
     let currentData = [];
@@ -65,13 +65,13 @@ async function fetchData() {
     });
   
     filterButton.addEventListener("click", () => {
-      currentData = filterData(storedData, countyInput.value);
-      processDataAndDisplayChart(currentData);
+        currentData = filterData(storedData, countySelect.value);
+        processDataAndDisplayChart(currentData);
     });
   
-    countyInput.addEventListener("input", () => {
-      currentData = filterData(storedData, countyInput.value);
-      processDataAndDisplayChart(currentData);
+    countySelect.addEventListener("change", () => {
+        currentData = filterData(storedData, countySelect.value);
+        processDataAndDisplayChart(currentData);
     });
   }
   

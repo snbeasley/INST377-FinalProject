@@ -19,13 +19,39 @@
       <section>
         <h2>Select County</h2>
         <form class="main_form">
-          <label for="county-input">County:</label>
-          <input type="text" id="county-input" name="county"/>
+          <label for="county-select">County:</label>
+          <select id="county-select" name="county">
+              <option value="">--Please choose a county--</option>
+              <option value="Allegany">Allegany</option>
+              <option value="Anne Arundel">Anne Arundel</option>
+              <option value="Baltimore">Baltimore</option>
+              <option value="Calvert">Calvert</option>
+              <option value="Caroline">Caroline</option>
+              <option value="Carroll">Carroll</option>
+              <option value="Cecil">Cecil</option>
+              <option value="Charles">Charles</option>
+              <option value="Dorchester">Dorchester</option>
+              <option value="Frederick">Frederick</option>
+              <option value="Garrett">Garrett</option>
+              <option value="Harford">Harford</option>
+              <option value="Howard">Howard</option>
+              <option value="Kent">Kent</option>
+              <option value="Montgomery">Montgomery</option>
+              <option value="Prince George's">Prince George's</option>
+              <option value="Queen Anne's">Queen Anne's</option>
+              <option value="Somerset">Somerset</option>
+              <option value="St. Mary's">St. Mary's</option>
+              <option value="Talbot">Talbot</option>
+              <option value="Washington">Washington</option>
+              <option value="Wicomico">Wicomico</option>
+              <option value="Worcester">Worcester</option>
+              <option value="Baltimore City">Baltimore City</option>
+          </select>
           <div class="buttons">
-            <button type="button" id="data_load">Load County Data</button>
-            <button type="button" id="filter">Filter Data</button>
+              <button type="button" id="data_load">Load County Data</button>
+              <button type="button" id="filter">Filter Data</button>
           </div>
-        </form>
+      </form>
       </section>
       <section>
         <h2>EV Adoption Rates by County</h2>

@@ -6,18 +6,21 @@
     <title>Seth's INST377 Final Project</title>
     <!-- Adds Highcharts.js library -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
-    <!-- Adds script.js script -->
-    <script src="script.js"></script>
     <!-- Adds styles.css -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1>Maryland Electric Vehicle Adoption Data Visualization</h1>
+      <h1>Maryland Electric Vehicle Adoption: A Data Visualisation</h1>
     </header>
     <main>
       <section>
-        <h2>Select County</h2>
+        <!-- Adds image -->
+        <h2>
+          <img src="images\mdflag.png" alt="Maryland Flag" id="md-flag" /> Select
+          County
+        </h2>
+        <!-- Adds County select options-->
         <form class="main_form">
           <label for="county-select">County:</label>
           <select id="county-select" name="county">
@@ -49,6 +52,7 @@
             <option value="Worcester">Worcester</option>
             <option value="Baltimore City">Baltimore City</option>
           </select>
+          <!-- Adds Year select options-->
           <form class="main_form">
             <label for="year-select">Year:</label>
             <select id="year-select" name="year">
@@ -57,6 +61,7 @@
               <option value="2021">2021</option>
             </select>
           </form>
+          <!-- Adds various Buttons for data-->
           <div class="buttons">
             <button type="button" id="data_load">Load County Data</button>
             <button type="button" id="filter">Filter Data</button>
@@ -69,6 +74,15 @@
         <div id="map"></div>
       </section>
     </main>
+    <footer class="footer">
+      <a
+        href="http://github.com/snbeasley"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Github: snbeasley
+      </a>
+    </footer>
+    <!-- Adds script.js -->
     <script src="script.js"></script>
   </body>
 </html>

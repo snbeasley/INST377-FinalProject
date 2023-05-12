@@ -6,7 +6,7 @@ Link to the Github Pages site: https://snbeasley.github.io/
 This project is aimed to visualize the adoption rate of electric vehicles in different counties of Maryland. It is targeted towards modern web browsers including but not limited to Chrome, Firefox, Safari and Edge, for both desktop and mobile platforms (iOS and Android).
 
 ## API
-It makes use the Open Data Maryland API which is found at (https://opendata.maryland.gov/resource/qtcv-n3tc). The API provides data about the electric vehicle registrations by county.
+It makes use of the Open Data Maryland API which is found at (https://opendata.maryland.gov/resource/qtcv-n3tc). The API provides data about the electric vehicle registrations by county.
 
 ## Visualisations
 The page displays a bar chart representing the electric vehicle registration data by county. The visualisations are dynamic and can be filtered based on the county and year selection by the user.

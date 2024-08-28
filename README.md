@@ -1,4 +1,3 @@
-
 # Maryland Electric Vehicle Adoption: A Data Visualisation
 Link to the Github Pages site: https://snbeasley.github.io/
 

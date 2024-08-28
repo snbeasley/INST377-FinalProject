@@ -1,5 +1,5 @@
-# INST377-FinalProject
-## Maryland Electric Vehicle Adoption: A Data Visualisation
+
+# Maryland Electric Vehicle Adoption: A Data Visualisation
 Link to the Github Pages site: https://snbeasley.github.io/
 
 ## Description
